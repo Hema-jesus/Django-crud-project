@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1 style="text-align: center;color: blue;font-size: x-large;">ZUDIO</h1></head>
+<style>
+	table{
+		border-color: white;border-spacing: 10px;}
+	th{color: blue;border-color: white;}</style><center>
+	<body><h2 style="text-align: center;color: red">PRODUCT LISTS</h2>
+	<table border='2'>
+	<thead>
+		<th>NO</th>
+		<th>COLOR</th>
+		<th>SIZE</th>
+		<th>QUANTITY</th>
+		<th>PRICE</th>
+		<th>UPDATE</th>
+		<th>DELETE</th>
+	</thead>
+	{%for i in s%}
+<tr>
+	<td>{{i.Number}}</td>
+	<td>{{i.Color}}</td>
+	<td>{{i.Size}}</td>
+	<td>{{i.Quantity}}</td>
+	<td>{{i.Price}}</td>
+    <td><a href="/update/{{ i.id }}">Click</a></td>
+    <td><a href="/delete/{{ i.id }}">Click</a></td>
+</tr>
+{%endfor%}
+</table>
+</body>
+</center>
+</html>

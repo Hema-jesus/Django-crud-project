@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><h1 style="text-align: center;color: blue;font-size: x-large;">ZUDIO</h1></head>
+<style>
+	table{
+		border-color: white;border-spacing: 10px;}
+	th{color: blue;
+	color: white;}</style>
+<center>
+<body>
+
+<h2 style="color: red">UPDATE RECORDS</h2>
+<form method="POST" style="color:blue">
+	{%csrf_token%}
+   NO:<input type="text" name="Number" value="{{s.Number}}"><br>
+   COLOR:<input type="text" name="Color" value="{{s.Color}}"><br>
+   SIZE:<input type="text" name="Size" value="{{s.Size}}"><br>
+   QUANTITY:<input type="text" name="Quantity" value="{{s.Quantity}}"><br>
+   PRICE:<input type="text" name="Price" value="{{s.Price}}"><br>
+	<input type="submit" value="UPDATE RECORD">
+</form>
+</body>
+</center>
+</html>
